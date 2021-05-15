@@ -1,0 +1,633 @@
+Introduction to Angular
+-----------------------
+    - Angular is the Framework
+
+    - Angular Given By Google.
+
+    - Angular Categorized into 3 types.
+
+        1) AngularJS
+
+        2) Angular2
+
+        3) Angular Material
+
+    - AngularJS used to develop the web applications.
+
+    - we will develop web applications(AngularJS) by using JavaScript.
+
+    - Angular2, used to develop the both web applications and mobile applications.
+
+    - current version of Angular2 is Angular11.
+
+    - Angular11 applications we will develop by using TypeScript.
+
+    - TypeScript is the Programming language, and TypeScript Given by Microsoft.
+
+    - Angular11 Installation Depending on "npm" tool.
+
+    - "npm" stands for node packaging manager.
+
+    - "npm" present in NodeJS.
+
+Software Installation
+---------------------
+1) download and install "NodeJS"
+
+    - NodeJS containes following tools.
+
+        1) npm
+
+        2) node
+
+        3) npx
+
+    - npm stands for node packaging manager.
+
+    - npm used to install the "Angular11"
+
+    website : https://nodejs.org/en/
+
+    file    : node-v16.1.0-x64.msi
+
+    msi stands for Microsoft Installer.
+
+
+2) install "yarn" tool
+
+    yarn tool, given by facebook.
+
+    yarn tool, used to download the 3rd party libraries.
+
+    yarn tool, Installation based on following command.
+
+    > npm install -g yarn
+
+    "-g" stands for global Installation.
+
+
+3) install Angular11
+
+    "Angular11" Installation also command based "Installation".
+
+    > npm install -g @angular/cli
+
+    cli stands for command line interface
+
+    cli tool, used to build the "angular" applications in "faster" manner.
+
+
+4) link the "yarn" tool to "cli" tool
+
+    > ng config -g cli.packageManager yarn
+
+    where "M" is the capital in "packageManager"
+
+
+5) download and install Visual Studio Code
+
+    - Visual Studio Code is the IDE given by Microsoft.
+
+    - Visual Studio Code also called as VSCode.
+
+    - VSCode is the open source IDE.
+
+website : https://code.visualstudio.com/download
+
+file    : VSCodeUserSetup-x64-1.56.1.exe
+
+
+Steps to create the first angular application
+=============================================
+step 1.
+	create the directory    (folder)
+
+    Ex. Angular-7AM  (open with VSCode)
+
+
+step 2.
+    create the angular project
+
+        > ng new firstApp
+
+        where "firstApp" is the name of the angular application
+
+
+step 3.
+    switch to angular application
+
+    > cd firstApp
+
+
+step 4.
+    execute the angular application
+
+    > ng s -o
+
+    - "s" stands for "serve"
+
+    - "-o" stands for open the default browser.
+
+    - the default port number of angular application is "4200"
+
+    - we can change the port number.
+
+
+directory structure
+-------------------
+
+e2e
+---
+   we have following testings
+
+    1) manual testing
+
+    2) automation testing
+
+        => unit testing
+
+        => integration testing
+
+        => end to end testing
+
+    - e2e stands for nend to end.
+
+    - e2e directory used to write the end to end test cases
+
+node_modules
+------------
+    node_modules containes libraries.
+
+    these libraries helps to execute the "angular applications" in browser.
+
+src/app
+-------
+    - it is used to deploy the angular applications
+
+    Ex.
+        components
+
+        services
+
+        directives
+
+        single page applications
+
+        ----
+        ----
+        ----
+
+src/app/app.component.ts
+        app.component.html
+        app.component.css
+        app.component.spec.ts
+------------------------------
+    where "AppComponent" is the default component.
+
+    "app.component.html" is the default external template to "AppComponent".
+
+    "app.component.css" is the default style sheet for "AppComponent"
+
+    "app.component.spec.ts" is the default testing file for "AppComponent".
+
+src/app/app.module.ts
+---------------------
+
+    - this file acting as "registration" file.
+
+    - this file acting as "module".
+
+    - this file used to register the component, services, directives,........
+
+src / assets
+------------
+    - used to deploy the static resources.
+
+    Ex.
+        images
+
+        text files
+
+        xml files
+
+        json files
+
+        ---
+        ---
+        ---
+
+src / environments
+------------------
+    - in general, we have three types of environments in real time.
+
+    1) development environment
+
+    2) testing environment
+
+    3) production environment
+
+
+    - we will configure required environment in "environments" directory
+
+src / favicon.ico
+-----------------
+
+    - "favicon.ico" representing default logo of angular.
+
+
+src/index.html
+--------------
+
+    - "index.html" file is the main template.
+
+    - angular starts the execution from "index.html" file.
+
+
+src/main.ts
+------------
+    this file acting as intermediate file between app.module.ts and index.html file.
+
+    we will register our applications in app.module.ts file.
+
+    main.ts file immidiately invokes app.module.ts file.
+
+    main.ts file automatically available to index.html file.
+
+src/polyfills.ts
+----------------
+    - it is used to convert the TypeScript to equalent JavaScript.
+
+src/styles.css
+--------------
+    - it is used to define the global styles.
+
+src/test.ts
+-----------
+    - this file acting as supporting file to write unit test cases
+
+.browserslistrc
+---------------
+    - it containes supporting browsers of angular.
+
+
+.editorconfig
+-------------
+    it is a configuration file for "viusla studio code"
+
+
+.gitignore
+----------
+    skip the libraries to Repositories.
+
+angular.json
+------------
+    - it describes the directory structure of angular application.
+
+karma.conf.js
+-------------
+    - in general we will write unit test cases by using "karma" tool.
+
+    - this file representing configuration file for karma tool.
+
+package.json
+------------
+    - it is used to download the 3rd party libraries.
+
+tsconfig.app.json
+-----------------
+    - it is used to configure the application level settings
+
+
+tsconfig.json
+-------------
+    - this file acting as configuration file for TypeScript.
+
+tsconfig.spec.json
+------------------
+    - it is a settings file for all test cases.
+
+
+tslint.json
+------------
+    - used to evaluate the syntax related errors.
+
+
+                                                ***** Component *****
+
+    - Simple TypeScript "class" behaves like Component.
+
+    - Reusable Portion of "Complex UI" Called as Component.
+
+    - As a Angular developer we can provide communication between one component to another component.
+
+
+steps to create the component
+-----------------------------
+
+step 1.
+    create the angular application
+
+        > ng new component-app
+
+        where "component-app" is the name of the angular application
+
+
+step 2.
+    switch to angular application
+
+    > cd component-app
+
+
+step 3.
+    create the component
+
+    ***********************************************
+    component-app
+                src
+                  app
+                    first.component.ts
+                    first.component.html
+
+                    app.module.ts
+                 index.html
+    ***********************************************
+
+    - "first.component.ts" file used to create the component.
+
+    - "first.component.html" file used to display the component output.
+
+    - "app.module.ts" used to register the component.
+
+    - angular Framework starts the execution from "index.html" file.
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
