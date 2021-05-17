@@ -321,311 +321,43 @@ tslint.json
     - As a Angular developer we can provide communication between one component to another component.
 
 
+
 steps to create the component
------------------------------
 
 step 1.
     create the angular application
 
-        > ng new component-app
+    > ng new component-app
 
-        where "component-app" is the name of the angular application
-
+    where "component-app" app is the name of the angular application.
 
 step 2.
     switch to angular application
 
     > cd component-app
 
-
 step 3.
     create the component
 
-    ***********************************************
+    *****************************************
     component-app
                 src
                   app
                     first.component.ts
                     first.component.html
 
+
                     app.module.ts
-                 index.html
-    ***********************************************
+                index.html
+    *****************************************
 
-    - "first.component.ts" file used to create the component.
+            where "first.component.ts" file is the "component" file.
 
-    - "first.component.html" file used to display the component output.
+            we will display component output in "first.component.html" file.
 
-    - "app.module.ts" used to register the component.
+            we will register component in "app.module.ts" file.
 
-    - angular Framework starts the execution from "index.html" file.
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            where index.html file is the main html file.
 
 
 
