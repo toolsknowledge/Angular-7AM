@@ -360,6 +360,73 @@ step 3.
             where index.html file is the main html file.
 
 
+    **********************************************************
+    components-app
+                 src
+                   app
+                     header.component.ts
+                     header.component.html
+
+                     body.component.ts
+                     body.component.html
+
+                     footer.component.ts
+                     footer.component.html
+
+
+                     main.component.ts
+                     main.component.html
+
+                     app.module.ts
+                 index.html
+    *********************************************************
+
+                                            Services
+
+
+        - Services are used to share the common business logic to multiple components.
+
+        - we have two types of services.
+
+                1) predefined services
+
+                2) custom services
+
+        - the services provided by angular Framework called as predefined services.
+
+        - the services developed by developer called as custom services.
+
+        - communication between service to components called as dependency injection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
