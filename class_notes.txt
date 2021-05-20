@@ -400,6 +400,77 @@ step 3.
 
 
 
+step 1.
+    create the angular application
+
+    > ng new serviceApp
+
+step 2.
+    switch to angular application
+
+    > cd serviceApp
+
+step 3.
+    create the service
+    
+    Ex.
+        dbService
+
+    *********************************************
+    serviceApp
+             src  
+                app
+                  services
+                     db.service.ts
+    **********************************************
+
+    finally "dbService" is ready with following functions.
+
+        1) mongoDBData()
+
+        2) cassandraDBData()
+
+
+step 4.
+    create the components
+
+    **************************************************
+    serviceApp
+             src
+               app
+                 components
+                     mongodb.component.ts
+                     mongodb.component.html
+
+                     cassandra.component.ts
+                     cassandra.component.html
+
+                     app.module.ts
+                 index.html
+    **************************************************
+
+        finally "mongodbComponent" is ready with "mongodb" selector.
+
+        and "cassandraComponent" is ready with "cassandra" selector.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
