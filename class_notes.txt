@@ -454,6 +454,71 @@ step 4.
         and "cassandraComponent" is ready with "cassandra" selector.
 
 
+                        ***** Rest API Calls ****
+
+steps to implement the rest api call
+
+step 1.
+    create the angular application
+
+    where "countriesApp" is the name of the angular application.
+
+
+step 2.
+    switch to angular application
+
+    > cd countriesApp
+
+
+step 3.
+    create the service
+
+   
+    *******************************************
+    countriesApp
+               src
+                 app  
+                   services
+                      countries.service.ts
+    *******************************************
+
+
+    finally "countriesService" is ready with "getCountries()" function.
+
+
+step 4.
+    create the component
+
+    **************************************************
+    countriesApp
+              src
+                app
+                 components
+                    countries.component.ts
+                    countres.component.html
+    **************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
