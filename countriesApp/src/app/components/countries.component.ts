@@ -6,11 +6,11 @@ import { HttpErrorResponse } from "@angular/common/http";
     templateUrl:"./countries.component.html"
 })
 export default class countriesComponent{
-    result:any;
+    abc:any;
     constructor(private service:countriesService){} 
     ngOnInit(){
         this.service.getCountries().subscribe((posRes:any)=>{
-            this.result = posRes;
+            this.abc = posRes;
         },(errRes:HttpErrorResponse)=>{
             console.log(errRes);
         });
