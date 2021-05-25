@@ -498,6 +498,144 @@ step 4.
                     countres.component.html
     **************************************************
 
+                                ***** Single Page Applications *****
+
+    - loading one component to another component without refreshing whole webpage called as single page application.
+
+    - loading one component to another component called as Routing.
+
+    - "Routes", used to implement the Routing in Single Page Application.
+
+    - "Routes" present in RouterModule.
+
+    - "Routes" & "RouterModule" present in @angular/router package.
+
+steps to implement the single page application
+----------------------------------------------
+step 1.
+    create the angular application
+
+        > ng new spaDemo1
+
+            where "spaDemo1" is the name of the angular application.
+
+step 2.
+    switch to angular application
+
+    > cd spaDemo1
+
+
+step 3.
+    create the components
+
+        we must create 4 components.
+
+        1) MasterComponent
+
+        2) ShirtsComponent
+
+        3) PantsComponent
+
+        4) KidsComponent
+
+        MasterComponent is the root component.
+
+        ShirtsComponent, PantsComponent and KidsComponent are target components.
+
+
+       > ng g c master --flat true --skipTests --selector=master -is
+
+            "g" stands for generate
+
+            "c" stands for component
+
+            --flat true means deletion of component folder (extra folder)
+
+            --skipTests used to delete the unit test cases
+
+            --selector used to assign the selector to component
+
+            -is stands for inline styles
+
+            -is used to skip the css files generation
+
+
+step 4.
+    implement the business logic in target components
+
+
+step 5.
+    create the router links
+
+        master.component.html
+
+        finally we have following router paths
+
+        1) /shirts
+
+        2) /pants
+
+        3) /kids
+
+step 6.
+    implement the routing
+
+    app.routes.ts
+
+        finally "appRoutes" routing member ready
+
+step 7.
+    complete registration
+
+    app.module.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
