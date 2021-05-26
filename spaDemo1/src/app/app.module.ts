@@ -8,6 +8,9 @@ import { PantsComponent } from './pants.component';
 import { KidsComponent } from './kids.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
+import { PoloComponent } from './polo.component';
+import { NikiComponent } from './niki.component';
+import { SummerComponent } from './summer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { appRoutes } from './app.routes';
     MasterComponent,
     ShirtsComponent,
     PantsComponent,
-    KidsComponent
+    KidsComponent,
+    PoloComponent,
+    NikiComponent,
+    SummerComponent
   ],
   imports: [
     BrowserModule,
