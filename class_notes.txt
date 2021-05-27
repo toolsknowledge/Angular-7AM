@@ -590,6 +590,44 @@ step 7.
     app.module.ts
 
 
+                                            *** Guards ***
+
+    - Angular Suuports following Authentication Guards.
+
+            1) CanActivate
+
+            2) CanDeactivate
+
+            3) CanActivateChild
+
+    - CanActivate used to perform the Authentication while entering into main routes.
+
+    - CanDeactivate used to perform the Authentication while leaving the main routes.
+
+    - CanActivateChild used to perform the Authentication while entering into child routes.
+
+
+Note : we will implement Authentication Guards by using custom services.
+
+
+*********************************************************
+spaDemo1
+       src
+         app
+           guards
+              auth.guards.ts
+*********************************************************
+
+
+
+
+
+
+
+
+
+
+
 
 
 
