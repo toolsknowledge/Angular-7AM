@@ -618,6 +618,212 @@ spaDemo1
               auth.guards.ts
 *********************************************************
 
+                                                ***** Lazy Loading *****
+
+    => Single Page Application
+
+    => Guards
+
+    => RxJS
+
+    => NgRx
+
+    => Intreceptors
+
+    => Lazy Loading
+
+    => Custom Modules
+
+    => MongoDB 
+
+    => ExpressJS
+
+    => 3rd party libraries
+
+            (loading bars & progress bars)
+
+    => Unit Test Cases
+
+    => AWS Deployment
+
+    => CI / CD Process
+
+
+step 1.
+    create the new angular project
+
+    > ng new miniproject
+
+        where "miniproject" is the name of angular application.
+
+
+step 2.
+    switch to angular application
+
+    > cd miniproject
+
+
+step 3.
+    create the components.
+
+        - we identifies two independent components.
+
+        1) MasterComponent
+
+        2) PageoneComponent
+
+
+        > ng g c master --skip-tests -is --selector=master --flat true
+
+        > ng g c pageone --skip-tests -is --selector=pageone --flat true
+
+
+
+step 4.
+    implement the CanLoad guard.
+
+    **************************************************
+    miniproject
+              src
+                app
+                    auth.guard.ts
+    *************************************************
+
+        where "authGuard" is the name of the service.
+
+        it contain "CanLoad" Authentication guard.
+
+
+
+step 5.
+                                ****** implement the countriesModule ******
+
+
+=> Design DataBase
+
+=> implement the Rest Service
+
+=> implement the State Management (NgRx)
+
+=> implement the Asynchronous Call  (RxJS)
+
+=> implement the 3rd party library
+
+=> create the custom module
+
+
+Design DataBase
+---------------
+    - MongoDB Supports "JSON".
+
+    - MongoDB DataBase is light weight DataBase.
+
+    - MongoDB provides the MongoDB Cloud Support.
+
+        URL : https://account.mongodb.com/account/login
+
+    - MongoDB DataBase default port number is 27017
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
