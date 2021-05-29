@@ -11,7 +11,7 @@ export class PageoneComponent implements OnInit {
   page_one:string;
 
   constructor() { 
-    this.page_one = "Page One !!!"
+    this.page_one = "Page One !!!";
   }
 
   ngOnInit(): void {

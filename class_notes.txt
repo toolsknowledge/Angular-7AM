@@ -648,128 +648,133 @@ spaDemo1
 
     => CI / CD Process
 
-
+                                                        miniproject
+                                                        ***********
 step 1.
-    create the new angular project
+    create the angular application
 
-    > ng new miniproject
+        > ng new miniproject
 
-        where "miniproject" is the name of angular application.
+    - where "miniproject" is the name of the angular application.
 
 
 step 2.
-    switch to angular application
+    switch to miniproject
 
     > cd miniproject
 
 
 step 3.
-    create the components.
-
-        - we identifies two independent components.
+    create the following components.
 
         1) MasterComponent
 
         2) PageoneComponent
 
+    > ng g c master --selector=master --skip-tests -is --flat true
 
-        > ng g c master --skip-tests -is --selector=master --flat true
 
-        > ng g c pageone --skip-tests -is --selector=pageone --flat true
+    > ng g c pageone --selector=pageone --skip-tests -is --flat true
 
+
+    finally following router links ready.
+
+            1) /page_one
+
+            2) /lazy
 
 
 step 4.
-    implement the CanLoad guard.
-
-    **************************************************
-    miniproject
-              src
-                app
-                    auth.guard.ts
-    *************************************************
-
-        where "authGuard" is the name of the service.
-
-        it contain "CanLoad" Authentication guard.
+    create the CountriesModule
 
 
+    => deploy the images to s3 bucket
 
-step 5.
-                                ****** implement the countriesModule ******
+        1) https://ngminiproject.s3.ap-south-1.amazonaws.com/p1.jpg
 
+        2) https://ngminiproject.s3.ap-south-1.amazonaws.com/p2.jpg
 
-=> Design DataBase
+        3) https://ngminiproject.s3.ap-south-1.amazonaws.com/p3.jpg
 
-=> implement the Rest Service
+        4) https://ngminiproject.s3.ap-south-1.amazonaws.com/p4.jpg
 
-=> implement the State Management (NgRx)
+        5) https://ngminiproject.s3.ap-south-1.amazonaws.com/p5.jpg
 
-=> implement the Asynchronous Call  (RxJS)
-
-=> implement the 3rd party library
-
-=> create the custom module
-
-
-Design DataBase
----------------
-    - MongoDB Supports "JSON".
-
-    - MongoDB DataBase is light weight DataBase.
-
-    - MongoDB provides the MongoDB Cloud Support.
-
-        URL : https://account.mongodb.com/account/login
-
-    - MongoDB DataBase default port number is 27017
-
-    
+        6) https://ngminiproject.s3.ap-south-1.amazonaws.com/p6.jpg
 
 
 
+    => store the images path to mongodb DataBase.
+
+            - MongoDB is "JSON" Based DataBase.
+
+            - MongoDB is "light" weight DataBase.
+
+            - MongoDB by default running on port number "27017"
+
+            - MongoDB is "NoSQL" DataBase.
+
+            - MongoDB Atlas Provides Cloud environment.
+
+
+    SQL                                                             NoSQL
+    -------------------------------------------------------------------------------------------------------
+
+    Oracle,MySQL,SQLServer                                          MongoDB, CassandraDB,Redis,DynamoDB
+
+
+    Tables                                                          Collections
+
+
+    rows                                                            document
+
+
+    primarykey                                                      _id
+
+
+    DataBase                                                        DataBase
+    -------------------------------------------------------------------------------------------------------
+
+
+    name of the DataBase    :   "ngworkshop"
+
+
+    Collection name         :   products
+
+
+    user                    :   admin
+
+
+    password                :   admin
+
+
+    connection url : mongodb+srv://admin:admin@cluster0.jgnmk.mongodb.net/ngworkshop?retryWrites=true&w=majority
 
 
 
+    => create the server directory
+
+    => switch to server directory
+
+            > cd server
 
 
+    => download node modules
 
-    
+            1) express
 
+            2) mongodb
 
-  
+            3) cors
 
+            4) body-parser
 
-
-
-
-
-
-
+        > yarn add express mongodb cors body-parser --save
 
 
+    => create the node server
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                server.js
 
 
 
