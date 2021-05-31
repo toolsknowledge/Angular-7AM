@@ -759,22 +759,60 @@ step 4.
             > cd server
 
 
-    => download node modules
+  => download node modules
 
-            1) express
+        1) express
 
-            2) mongodb
+        2) mongodb
 
-            3) cors
+        3) cors
 
-            4) body-parser
+        4) body-parser
 
-        > yarn add express mongodb cors body-parser --save
+        - express module used to develop the rest services
+
+                GET
+
+                POST
+
+                PUT
+
+                DELETE
+
+                ----
+                ----
+                ----
+
+        - mongodb module used to connect to mongodb DataBase.
+
+        - cors module used to enable the cors policy.
+
+        - body-parser module used to read the data from client application
 
 
-    => create the node server
+        > yarn add express mongodb cors body-parser --save 
 
-                server.js
+
+    => develop the rest api by using nodejs
+
+            server.js
+
+
+    => start the node server
+
+            > node server
+
+    => test the rest api by using Postman.
+
+            http://localhost:8080/products
+
+
+
+
+
+
+
+
 
 
 
