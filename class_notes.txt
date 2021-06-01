@@ -808,6 +808,40 @@ step 4.
 
 
 
+                                                01 / 06 / 2021
+                                                --------------
+
+
+=> products.service.ts
+
+        finally "productsService" is ready with "getProducts()" function.
+
+
+
+=> products.Intreceptor.ts
+
+        => these Intreceptors are used to manipulate the endpoints
+
+
+    products.intreceptor.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
