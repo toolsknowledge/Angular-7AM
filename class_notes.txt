@@ -823,7 +823,59 @@ step 4.
         => these Intreceptors are used to manipulate the endpoints
 
 
-    products.intreceptor.ts
+    products.intreceptor.ts     
+
+
+
+                                    02/06/2021
+                                    ----------
+state management
+----------------
+    => store
+
+    => reducer
+
+    => state
+
+    => initialState
+
+    => dispatch
+
+    => payload
+
+    => action
+
+    => subscribe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
