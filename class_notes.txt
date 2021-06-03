@@ -847,6 +847,114 @@ state management
 
     => subscribe
 
+                                    03/06/2021
+                                    ----------
+
+create the modal based on rest api call
+
+        => http://localhost:8080/products
+
+
+**************************************
+miniproject
+          src
+            app
+              modal
+                 product.modal.ts
+**************************************
+    finally "Product" modal is ready.
+
+
+
+download libraries
+    @ngrx/effects
+    @ngrx/store
+
+            > yarn add @ngrx/effects @ngrx/store --save
+
+
+
+
+create the actions
+
+        @GET_PRODUCTS
+        @GET_PRODUCTS_SUCCESS
+        @GET_PRODUCTS_FAIL
+
+        *****************************************
+        miniproject
+                  src
+                    app
+                      actions   
+                         product.action.ts
+        *****************************************
+
+            finally following actions are ready.
+
+            ProductActionTypes
+
+                        => GetProducts
+
+                        => GetProductsSuccess
+
+                        => GetProductsFail
+
+create the effects
+------------------
+
+            implementation of actions called as effects
+
+
+            *******************************************
+            miniproject
+                      src
+                        app
+                          effects
+                             product.effects.ts
+            *******************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
