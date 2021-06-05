@@ -913,7 +913,27 @@ create the effects
                              product.effects.ts
             *******************************************
 
+create the effects
 
+            ******************************************
+            miniproject
+                      src
+                        app
+                          effects
+                              product.effect.ts
+            *******************************************
+
+
+create the reducer
+------------------
+
+            *******************************************************
+            miniproject
+                      src
+                        app
+                          reducer
+                             product.reducer.ts
+            *******************************************************
 
 
 
