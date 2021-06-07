@@ -1,40 +1,44 @@
-import { productActions, ProductActionTypes } from "../actions/product.action";
+import { ProductActionsTypes, ProductsActions } from "../actions/product.action";
 import Product from "../modal/product.modal";
 
 interface IState{
     loading:boolean;
     products:Product[];
     error:string;
-}
+};
 
 const initialState:IState = {
     loading : false,
-    products : [],
-    error : ""
-}
+    products:[],
+    error:""
+};
 
-export default function productsReducer(state=initialState,action:ProductActionTypes):IState{
+export default function productsReducer(state=initialState,action:ProductActionsTypes):IState{
     switch(action.type){
-        case productActions.GetProducts:
-            return{
-                ...state,
-                loading:false,
-                products:[],
-                error:""
-            }
-        case productActions.GetProductsSuccess:
-            return{
-                ...state,
-                products:action.products,
-                error:"",
-                loading:true
-            }
-        case productActions.GetProductsFail:
-            return{
-                ...state,
-                products:[],
-                error:action.error,
-                loading:true
-            }
+        case ProductsActions.GetProducts:
+                return{
+                    ...state,
+                    loading:false,
+                    products:[],
+                    error:""
+                }      
+        case ProductsActions.ProductsLoadingSuccess:
+              return{
+                  ...state,
+                  loading:true,
+                  products:action.products,
+                  error:""
+              }
+
+        case ProductsActions.ProductsLoadingFail:
+              return{
+                  ...state,
+                  loading:true,
+                  products:[],
+                  error:action.error
+              }
+
+        default:
+            return state;
     }
-}
+};

@@ -1,36 +1,29 @@
-//@ GET_PRODUCTS
-//@ GET_PRODUCTS_SUCCESS
-//@ GET_PRODUCTS_FAIL
-
 import { Action } from "@ngrx/store";
 import Product from "../modal/product.modal";
 
-
-export enum productActions{
+export enum ProductsActions{
     GetProducts = "[Products] Loading",
-    GetProductsSuccess = "[Products] Loading Success",
-    GetProductsFail = "[Products] Loading Fail"
+    ProductsLoadingSuccess = "[Products] Loading Success",
+    ProductsLoadingFail = "[Products] Loading Fail"
 };
 
 
 export class GetProducts implements Action{
-    public readonly type = productActions.GetProducts;
+    public readonly type = ProductsActions.GetProducts;
 };
 
-export class GetProductsSuccess implements Action{
-    public readonly type = productActions.GetProductsSuccess;
+export class ProductsLoadingSuccess implements Action{
+    public readonly type = ProductsActions.ProductsLoadingSuccess;
     constructor(public products:Product[]){}
 };
 
-export class GetProductsFail implements Action{
-    public readonly type = productActions.GetProductsFail;
-    constructor(public error:string){}
+export class ProductsLoadingFail implements Action{
+    public readonly type = ProductsActions.ProductsLoadingFail;
+    constructor(public error:string){}   
 };
 
-export type ProductActionTypes = GetProducts | GetProductsSuccess | GetProductsFail;
 
-
-
+export  type ProductActionsTypes = GetProducts | ProductsLoadingSuccess | ProductsLoadingFail;
 
 
 

@@ -935,6 +935,99 @@ create the reducer
                              product.reducer.ts
             *******************************************************
 
+07-06-2021
+==========
+
+=> modal
+
+=> actions
+
+=> effects
+
+=> reducer
+
+
+------------------------------
+store
+
+dispatch & subscribe
+-----------------------------
+
+****************************************
+miniproject
+          src
+            app
+              modal
+                product.modal.ts
+***************************************
+
+    - automatically "Product" modal is ready.
+
+
+**********************************************
+miniproject
+         src
+           app
+             actions
+                products.actions.ts
+*********************************************
+
+    - "ProductsActions" is the enum datatype.
+
+    - "GetProducts","ProductsLoadingSuccess","ProductsLoadingFail" are the classes
+
+    - "ProductActionsTypes" containes all our classes.
+
+
+
+********************************************
+miniproject
+          src
+            app
+              effects
+                products.effects.ts
+********************************************
+
+
+******************************************
+miniproject
+         src
+           app
+              reducer
+                 products.reducer.ts
+*****************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -7,6 +7,6 @@ interface Product{
     "description":string;
     "image":string;
     "qty":number;
-    "countInStock":number;
+    "countInStock":number
 };
 export default Product;
