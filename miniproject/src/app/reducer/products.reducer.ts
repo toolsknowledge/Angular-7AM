@@ -1,7 +1,7 @@
 import { ProductActionsTypes, ProductsActions } from "../actions/product.action";
 import Product from "../modal/product.modal";
 
-interface IState{
+export interface IState{
     loading:boolean;
     products:Product[];
     error:string;
