@@ -19,7 +19,7 @@ export class ProductsLoadingSuccess implements Action{
 
 export class ProductsLoadingFail implements Action{
     public readonly type = ProductsActions.ProductsLoadingFail;
-    constructor(public error:string){}   
+    constructor(public error:any){}   
 };
 
 

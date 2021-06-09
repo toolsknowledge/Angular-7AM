@@ -998,6 +998,29 @@ miniproject
 *****************************************
 
 
+3) implement the CanLoad Authentication Guard.
+
+
+*************************************************
+miniproject
+          src
+            app
+              auth.guard.ts
+*************************************************
+
+
+
+4) implement the routing
+
+        *********************************************
+        miniproject
+                  src
+                    app
+                      app.routes.ts
+        *********************************************
+
+
+
 
 
 

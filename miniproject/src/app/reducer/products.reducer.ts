@@ -35,7 +35,7 @@ export default function productsReducer(state=initialState,action:ProductActions
                   ...state,
                   loading:true,
                   products:[],
-                  error:action.error
+                  error:"Network Error"
               }
 
         default:

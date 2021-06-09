@@ -18,12 +18,13 @@ import productsReducer from "./reducer/products.reducer";
     declarations:[countriesComponent],
     imports:[CommonModule,
              RouterModule.forChild([{path:"",component:countriesComponent}]),
-             StoreModule.forRoot({"products":productsReducer}),
-             EffectsModule.forRoot([EffectsModule])],
+             EffectsModule.forRoot([EffectsModule]),
+             StoreModule.forRoot({"products":productsReducer})],
+             
 
     providers:[],
     exports:[countriesComponent]
 })
-export default class countriesModule{}
+export  class countriesModule{}
 
 
