@@ -41,19 +41,21 @@ const miniproject = mongodb.MongoClient;
 //to check headers
 //if header contain miniproject === ashokit then "/products" endpoint
 //otherwise throw error
-const tokenMiddleware = (req,res,next)=>{
-    const allHeaders = req.headers;
-    if(allHeaders.miniproject == "ashokit"){
-         return next();
-    }else{
-        res.status(401).send({"message":"unauthorised user"})
-    }
-}
+
+// const tokenMiddleware = (req,res,next)=>{
+//     const allHeaders = req.headers;
+//     console.log(allHeaders.miniproject);
+//     if(allHeaders.miniproject == "ashokit"){
+//          return next();
+//     }else{
+//         res.status(401).send({"message":"unauthorised user"})
+//     }
+// }
 
 
 
 //create the GET Request
-app.get("/products",[tokenMiddleware],(req,res)=>{
+app.get("/products",(req,res)=>{
     miniproject.connect("mongodb+srv://admin:admin@cluster0.jgnmk.mongodb.net/ngworkshop?retryWrites=true&w=majority",(err,connection)=>{
         if(err) throw err;
         else{

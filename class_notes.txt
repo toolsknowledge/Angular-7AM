@@ -1025,6 +1025,192 @@ miniproject
 
 
 
+=> create the modal
+
+        ****************************************
+        first-app
+                src
+                  app
+                    product.modal.ts
+        *****************************************
+
+                automatically "Product" modal is ready.
+
+
+
+=> create the service
+
+
+        *********************************************
+        first-app
+                src
+                   app
+                      product.service.ts
+        *********************************************
+
+            finally "productService" is ready with "getProducts()" function.
+
+
+=> create the intreceptor
+
+        - intreceptors will execute before server call.
+
+        - intreceptors have the capability to manipulate requests.
+
+        - we must register intreceptors in app.module.ts.
+
+        ***************************************************
+        first-app
+                src
+                   app
+                      product.intreceptor.ts
+        ***************************************************
+
+        finally "productIntreceptor" is ready.
+
+
+=> create the custom module 
+
+
+        ************************************************
+        first-app
+                src
+                  app
+                    product.component.ts
+                    product.component.html
+
+                    product.service.ts
+
+                    product.module.ts
+        **************************************************
+
+                finally "productModule" is ready.
+
+                and "productModule" is the child module.
+
+
+=> create the Authentication Guard
+
+        ************************************************
+        first-app
+                 src
+                    app
+                       auth.guard.ts
+        ************************************************
+
+            finally "authGuard" is ready.
+
+
+=> implement the single page application
+
+        *************************************************
+        first-app
+                src
+                  app
+                    master.component.ts
+                    master.component.html
+
+                    demo.component.ts
+                    demo.component.html
+
+
+                    app.routes.ts
+
+                    app.module.ts
+        **************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
